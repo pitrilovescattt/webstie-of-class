@@ -1,48 +1,49 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>WebClass</title>
+    <title>WebClass 💖</title>
+
+    <!-- FONT LUCU -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- HUBUNGKAN CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- RESPONSIVE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<header>
-    <h1>📚 WebClass Fitri 📚</h1>
-    <p>Belajar Online Bersama Fitri</p>
-</header>
-
 <body>
-    <img src="WhatsApp Image 2026-03-28 at 18.41.10.jpeg.png" width="150">
+
+    <h1>🐱 WebClass</h1>
+    <p>Welcome to my cute study space 💖</p>
+
+    <!-- FOTO -->
+    <img src="WhatsApp Image 2026-03-28 at 18.41.10.jpeg.png">
+
+    <!-- CARD 1 -->
     <div class="card">
-    <h2>Kelas Favorit</h2>
-    <p>Belajar seru setiap hari!</p>
-</div>
+        <h2>📚 Matematika</h2>
+        <p>Belajar seru setiap hari!</p>
+        <button onclick="gabung()">Join Class</button>
+    </div>
 
-<nav>
-    <button onclick="showSection('materi')">Materi</button>
-    <button onclick="showSection('tugas')">Tugas</button>
-</nav>
+    <!-- CARD 2 -->
+    <div class="card">
+        <h2>🧪 Kimia</h2>
+        <p>Eksperimen seru dan mudah!</p>
+        <button onclick="gabung()">Join Class</button>
+    </div>
 
-<main>
-    <section id="Materi">
-        <h2>Materi</h2>
-        <ul>
-            <li>HTML Dasar</li>
-            <li>CSS Dasar</li>
-            <li>JavaScript Dasar</li>
-        </ul>
-    </section>
+    <!-- CARD 3 -->
+    <div class="card">
+        <h2>🌍 Bahasa Inggris</h2>
+        <p>Belajar santai tapi jago!</p>
+        <button onclick="gabung()">Join Class</button>
+    </div>
 
-    <section id="Tugas" style="display:none;">
-        <h2>Tugas</h2>
-        <p>Kumpulkan tugas kamu di bawah:</p>
-        <input type="text" id="taskInput" placeholder="Masukkan tugas">
-        <button onclick="addTask()">Tambah</button>
+    <!-- JS -->
+    <script src="script.js"></script>
 
-        <ul id="taskList"></ul>
-    </section>
-</main>
-
-<script src="script.js"></script>
 </body>
 </html>
