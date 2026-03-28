@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>WebClass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📚 WebClass</h1>
+    <p>Belajar Online Sederhana</p>
+</header>
+
+<nav>
+    <button onclick="showSection('materi')">Materi</button>
+    <button onclick="showSection('tugas')">Tugas</button>
+</nav>
+
+<main>
+    <section id="materi">
+        <h2>Materi</h2>
+        <ul>
+            <li>HTML Dasar</li>
+            <li>CSS Dasar</li>
+            <li>JavaScript Dasar</li>
+        </ul>
+    </section>
+
+    <section id="tugas" style="display:none;">
+        <h2>Tugas</h2>
+        <p>Kumpulkan tugas kamu di bawah:</p>
+        <input type="text" id="taskInput" placeholder="Masukkan tugas">
+        <button onclick="addTask()">Tambah</button>
+
+        <ul id="taskList"></ul>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
